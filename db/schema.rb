@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20151008173755) do
   create_table "pets", force: :cascade do |t|
     t.string   "title",       limit: 255
     t.text     "description", limit: 65535
+    t.string   "image",       limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id",     limit: 4
