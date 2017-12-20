@@ -1,4 +1,6 @@
 <h2 align="center">Title: <%= @pet.title %></h2>
+<h2 align="center"><%= image_tag @pet.image.thumb.url %></h2>
+
 <div class="well col-xs-8 col-xs-offset-2">
   <% if @pet.user %>
     <ul class="listing">
