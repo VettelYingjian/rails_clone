@@ -50,6 +50,7 @@ GEM
       will_paginate
     builder (3.2.2)
     byebug (6.0.2)
+    cancancan (2.1.2)
     carrierwave (1.1.0)
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
@@ -62,6 +63,12 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     debug_inspector (0.0.2)
+    devise (4.4.0)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0, < 5.2)
+      responders
+      warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.6.0)
     globalid (0.3.6)
@@ -87,8 +94,10 @@ GEM
     mysql2 (0.3.21)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    orm_adapter (0.5.0)
     pg (0.18.3)
     rack (1.6.4)
+    rack-cors (1.0.2)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.3)
@@ -123,6 +132,9 @@ GEM
     rake (10.4.2)
     rdoc (4.2.0)
       json (~> 1.4)
+    responders (2.4.0)
+      actionpack (>= 4.2.0, < 5.3)
+      railties (>= 4.2.0, < 5.3)
     sass (3.4.18)
     sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
@@ -151,6 +163,8 @@ GEM
     uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    warden (1.2.7)
+      rack (>= 1.0)
     web-console (2.2.1)
       activemodel (>= 4.0)
       binding_of_caller (>= 0.7.2)
@@ -166,13 +180,16 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.5)
   bootstrap-will_paginate (= 0.0.10)
   byebug
+  cancancan (~> 2.0)
   carrierwave (~> 1.0)
   coffee-rails (~> 4.1.0)
+  devise (~> 4.2)
   jbuilder (~> 2.0)
   jquery-rails
   mini_magick
   mysql2 (~> 0.3.18)
   pg
+  rack-cors
   rails (= 4.2.3)
   rails_12factor
   sass-rails (~> 5.0)

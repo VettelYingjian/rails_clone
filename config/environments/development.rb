@@ -16,7 +16,7 @@ Rails.application.configure do
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = true
 
-  config.action_mailer.perform_caching = false
+  # config.action_mailer.perform_caching = false
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
@@ -26,8 +26,8 @@ Rails.application.configure do
     :port => 587,
     :domain => 'gmail.com',
     # Need to change this
-    :user_name => 'your email',
-    :password => 'your password',
+    :user_name => 'zsy2053@gmail.com',
+    :password => 'tt6893863',
     :authentication => 'plain',
     :enable_starttls_auto => true
   }

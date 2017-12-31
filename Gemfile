@@ -16,6 +16,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # Use mysql as the database for Active Record
 gem 'mysql2', '~> 0.3.18'
+gem 'rack-cors'
+gem 'devise', '~> 4.2'
+gem 'rack-cors', :require => 'rack/cors'
+gem 'cancancan', '~> 2.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
