@@ -18,6 +18,10 @@
       </div>
     </ul>
   <% end %>
+  <h4 class="center description"><strong>Contact email:</strong></h4>
+  <%= simple_format(@pet.contact_email) %>
+  <h4 class="center description"><strong>Breed:</strong></h4>
+  <%= simple_format(@pet.breed) %>
   <h4 class="center description"><strong>Description:</strong></h4>
   <hr>
   <%= simple_format(@pet.description) %>

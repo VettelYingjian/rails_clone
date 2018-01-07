@@ -49,7 +49,7 @@ class PetsController < ApplicationController
     end
 
     def pet_params
-      params.require(:pet).permit(:title, :image, :remove_image, :description, category_ids: [])
+      params.require(:pet).permit(:title, :breed, :contact_email, :image, :remove_image, :description, category_ids: [])
     end
 
     def require_same_user

@@ -5,6 +5,8 @@
         <div class="pet-title">
           <%= link_to pet.title, pet_path(pet) %>
         </div>
+        <h4 class="center description"><strong>Breed:</strong></h4>
+        <%= simple_format(pet.breed) %>
         <div class="pet-body">
           <%= truncate(pet.description, length: 100) %>
           <div class="pet-meta-details">
