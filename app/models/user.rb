@@ -37,6 +37,11 @@ class User < ActiveRecord::Base
     BCrypt::Password.new(digest).is_password?(token)
   end
 
+  # Forget a user
+  def forget
+    update_attribute(:remember_token, nil)
+  end
+
   # Activates an account.
   def activate
     update_attribute(:activated,    true)

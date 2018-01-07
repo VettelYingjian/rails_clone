@@ -20,6 +20,7 @@ gem 'rack-cors'
 gem 'devise', '~> 4.2'
 gem 'rack-cors', :require => 'rack/cors'
 gem 'cancancan', '~> 2.0'
+gem 'stripe'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
