@@ -20,12 +20,16 @@ $navbar-default-bg: black;
   text-align: center;
 }
 
-.jumbotron {
-  background-image: asset-url('new_cover_page.jpg');
-  background-size: cover;
-  height: 550px;
+.video {
+ position: fixed;
+ top: 50%; left: 50%;
+ z-index: 1;
+ min-width: 100%;
+ min-height: 100%;
+ width: auto;
+ height: auto;
+ transform: translate(-50%, -50%);
 }
-
 .jumbotron h1 {
   color: #fff;
   text-align: center;
