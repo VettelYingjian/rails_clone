@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   resources :password_resets, only: [:new, :create, :edit, :update]
   resources :categories, except: [:destroy]
   resources :charges
+  mount Thredded::Engine => '/forum'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

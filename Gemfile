@@ -14,6 +14,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
+gem 'thredded', '~> 0.14.0'
 # Use mysql as the database for Active Record
 gem 'mysql2', '~> 0.3.18'
 gem 'rack-cors'
@@ -30,6 +31,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
+gem 'rails-ujs'
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
 # bundle exec rake doc:rails generates the API under doc/api.
