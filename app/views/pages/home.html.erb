@@ -2,60 +2,6 @@
   <!--<%= video_tag "source.mp4", autoplay: true, loop: true, class: "video", controls: true, autobuffer: true %>-->
   <h1>DOGGY DOGGY</h1>
   <%= link_to "Sign up now", signup_path, class: "btn btn-danger btn-lg btn-xlarge" %>
-  <div class="container">
-    <div class="row">
-		<div class="col-md-12">
-                <div id="Carousel" class="carousel slide">
 
-                <ol class="carousel-indicators">
-                    <li data-target="#Carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#Carousel" data-slide-to="1"></li>
-                    <li data-target="#Carousel" data-slide-to="2"></li>
-                </ol>
-
-                <!-- Carousel items -->
-                <div class="carousel-inner">
-
-                <div class="item active">
-                	<div class="row">
-                	  <% @images.each do |p| %>
-                      <div class="col-md-3"><a href="#" class="thumbnail"><%= image_tag p.image.thumb.url %></a></div>
-                    <% end %>
-                	</div><!--.row-->
-                </div><!--.item-->
-
-                <div class="item">
-                	<div class="row">
-                    <% @images.each do |p| %>
-                      <div class="col-md-3"><a href="#" class="thumbnail"><%= image_tag p.image.thumb.url %></a></div>
-                    <% end %>
-                	</div><!--.row-->
-                </div><!--.item-->
-
-                <div class="item">
-                	<div class="row">
-                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-                	</div><!--.row-->
-                </div><!--.item-->
-
-                </div><!--.carousel-inner-->
-                  <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a>
-                  <a data-slide="next" href="#Carousel" class="right carousel-control">›</a>
-                </div><!--.Carousel-->
-
-		</div>
-    <div id="gallery">
-      <% for photo in @images %>
-        <div class="photo">
-          <%= link_to image_tag(photo.image.url), photo %>
-
-        </div>
-      <% end %>
-    </div>
-	</div>
-</div><!--.container-->
 
 </div>
